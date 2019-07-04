@@ -1,4 +1,5 @@
 
+[![Build Status](https://dev.azure.com/LuJinLou/TEST%20PROJECT/_apis/build/status/lujinlou1.pipelines-java?branchName=master)](https://dev.azure.com/LuJinLou/TEST%20PROJECT/_build/latest?definitionId=1&branchName=master)
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
