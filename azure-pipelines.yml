@@ -10,6 +10,10 @@ pool:
   vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 
 steps:
+- script: |
+    echo Starting the build
+    mvn package
+  displayName: 'Build with Maven'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -31,3 +35,6 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'build'
+- task: ShellScript@2
+  inputs:
+    scriptPath: 'build.sh'
