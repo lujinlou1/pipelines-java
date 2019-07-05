@@ -15,10 +15,10 @@ steps:
     mvn package
   displayName: 'Build with Maven'
   env:
-    MY_MAPPED_ENV_VAR: $(mySecret)
+    MY_MAPPED_ENV_VAR: $(system.teamProject)
 - powershell: |
     # Using an input-macro:
-    Write-Host "This works: $(mySecret)"  
+    Write-Host "This works: $(system.teamProject)"  
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
