@@ -6,6 +6,10 @@
 trigger:
 - master
 
+variables:
+- group: New variable group 05-7月
+- name: app-location
+  value: '123'
 
 pool:
   vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
