@@ -6,6 +6,12 @@
 trigger:
 - master
 
+
+pr:
+- master
+- develop
+
+
 variables:
 - group: New variable group 05-7月
 - name: app-location
