@@ -16,7 +16,6 @@ pool:
 
 steps:
 - script: npm installer
-- script: npm test
 - script: |
     echo Starting the build
     mvn package
