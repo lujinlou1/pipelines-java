@@ -25,7 +25,6 @@ steps:
 - powershell: echo Hello $(name)
   displayName: Say hello
   name: firstStep
-  workingDirectory: $(build.workingDirectory)
   failOnStderr: enabled 
   env:
     name: Microsoft
