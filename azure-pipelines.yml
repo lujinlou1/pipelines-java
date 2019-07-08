@@ -15,6 +15,8 @@ pool:
   vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 
 steps:
+- script: npm installer
+- script: npm test
 - script: |
     echo Starting the build
     mvn package
